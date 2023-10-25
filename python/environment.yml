@@ -1,0 +1,23 @@
+name: stripmaker
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip=23.2
+  - jinja2=2.11.2
+  - backports.tempfile=1.0
+  - contextlib2=21.6.0
+  - yaml=0.2.5
+  - numpy=1.21.2
+  - scikit-learn=1.0.2
+  - pandas=1.4.1
+  - pyyaml=6.0
+  - tabulate=0.8.9
+  - matplotlib=3.5.1
+  - openpyxl=3.0.9
+  - parse=1.19.0
+  - svgutils=0.3.4
+  - pip:
+    - svgpathtools==1.5.0
+    - svgwrite==1.4.1

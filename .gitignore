@@ -1,0 +1,17 @@
+.DS_Store
+
+_external/
+
+.vs/
+Debug/
+Release/
+build/
+
+.vscode/
+compile_commands.json
+
+snapshot_*/
+*.scap
+
+*__pycache__/
+*.pyc
