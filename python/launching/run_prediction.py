@@ -222,7 +222,7 @@ if __name__ == '__main__':
                 cut_filename = [f for f in cut_files if cut_filename in f]
                 if len(cut_filename) > 0:
                     cut_filename = cut_filename[0]
-            if Path(cut_filename).exists():
+            if (len(cut_filename) > 0) and Path(cut_filename).exists():
                 cmd += ['--uncut', cut_filename]
 
             # Run inference
@@ -241,7 +241,7 @@ if __name__ == '__main__':
             post_exe = args.exe.split(',')[1]
             cmd = [post_exe, '-i', split_filename, '--end', end_str,
                    '--vis', output_dir]
-            if Path(cut_filename).exists():
+            if (len(cut_filename) > 0) and Path(cut_filename).exists():
                 cmd += ['--uncut', cut_filename]
             if args.spiral:
                 cmd += ['--spiral']
